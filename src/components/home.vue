@@ -480,6 +480,16 @@ html {
   text-align: center;
   line-height: 2;
 }
+@media (max-width: 768px) {
+  .chunk3 .lable {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .chunk3 .synopsis {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
 @media (max-width: 500px) {
   .mac {
     width: 29rem;
