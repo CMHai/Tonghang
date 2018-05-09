@@ -6,11 +6,11 @@
         <div id="navbar" class="hidden-xs hidden-sm">
           <div class="row">
             <div class="col-md-7">
-              <div class="col-md-3 col-md-offset-2">
-                <img src="../assets/logo.png" alt="">
+              <div class="col-md-10 col-md-offset-2">
+                <img src="../assets/logo.png" style="width: 17.6rem;">
               </div>
             </div>
-            <div class="col-md-4" style="font-size:1.56rem;">
+            <div class="col-md-5" style="font-size:1.56rem;">
               <div class="row">
                 <div class="col-md-3">
                   <span @click="scrollTo()">首页</span>
@@ -55,69 +55,69 @@
         <div class="row">
           <div class="col-md-12">
             <div class="row">
-              <div class="col-md-6" style="padding-bottom:2rem;">
+              <div class="col-md-4" style="padding-bottom:2rem;">
                 <div class="row">
-                  <div class="col-md-4" style="text-align: center;">
+                  <div class="col-md-2" style="text-align: center;">
                     <img src="../assets/icon1.png" alt="">
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-10">
                     <div class="lable">实用性</div>
                     <div class="synopsis">系统上线2年，实现了无纸化办公 <br>满足业务各方面要求，得到用户好评</div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6" style="padding-bottom:2rem;">
+              <div class="col-md-4" style="padding-bottom:2rem;">
                 <div class="row">
-                  <div class="col-md-4" style="text-align: center;">
+                  <div class="col-md-2" style="text-align: center;">
                     <img src="../assets/icon2.png" alt="">
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-10">
                     <div class="lable">安全性</div>
                     <div class="synopsis">内外网隔离，保证系统的安全性<br> 数据热备份，保证数据的安全性</div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6" style="padding-bottom:2rem;">
+              <div class="col-md-4" style="padding-bottom:2rem;">
                 <div class="row">
-                  <div class="col-md-4" style="text-align: center;">
+                  <div class="col-md-2" style="text-align: center;">
                     <img src="../assets/icon3.png" alt="">
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-10">
                     <div class="lable">稳定性</div>
                     <div class="synopsis">系统长时间运行，经受了时间和 <br> 数据的考验，系统运行平稳</div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6" style="padding-bottom:2rem;">
+              <div class="col-md-4" style="padding-bottom:2rem;">
                 <div class="row">
-                  <div class="col-md-4" style="text-align: center;">
+                  <div class="col-md-2" style="text-align: center;">
                     <img src="../assets/icon4.png" alt="">
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-10">
                     <div class="lable">准确性</div>
                     <div class="synopsis">系统自动校验，保证数据一致性 <br> 系统自动计算，杜绝人为出错可能性 <br> 非法数据无法录入到系统里</div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-6" style="padding-bottom:2rem;">
+              <div class="col-md-4" style="padding-bottom:2rem;">
                 <div class="row">
-                  <div class="col-md-4" style="text-align: center;">
+                  <div class="col-md-2" style="text-align: center;">
                     <img src="../assets/icon5.png" alt="">
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-10">
                     <div class="lable">效率提升</div>
                     <div class="synopsis">电子化的录入、自动化计算<br> 自动提示基础数据，减轻记忆负担 <br> 自动生成报表，为决策提供支持<br> 通过数据分析找到系统优化点，提高效率</div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-6" style="padding-bottom:2rem;">
+              <div class="col-md-4" style="padding-bottom:2rem;">
                 <div class="row">
-                  <div class="col-md-4" style="text-align: center;">
+                  <div class="col-md-2" style="text-align: center;">
                     <img src="../assets/icon6.png" alt="">
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-10">
                     <div class="lable">实时性</div>
                     <div class="synopsis">实时提供现场数据，<br>为指挥大厅决策提供依据</div>
                   </div>
@@ -231,6 +231,7 @@ export default {
           position: "fixed",
           top: "0",
           background: "#fff",
+          color: "#43B1F8",
           "box-shadow": "0 2px 4px rgba(0, 0, 0, 0.14)"
         });
       } else {
@@ -238,6 +239,7 @@ export default {
           position: "absolute",
           top: "7rem",
           background: "none",
+          color: "#878787",
           "box-shadow": "0 0px 0px rgba(0, 0, 0, 0.14)"
         });
       }
@@ -272,7 +274,10 @@ export default {
         $("html,body").animate({ scrollTop: 0 }, speed);
       } else {
         if (ele.length > 0)
-          $("html,body").animate({ scrollTop: $(ele).offset().top-80 }, speed);
+          $("html,body").animate(
+            { scrollTop: $(ele).offset().top - 80 },
+            speed
+          );
       }
       return false;
     }
@@ -282,7 +287,7 @@ export default {
 
 <style>
 html {
-  font-size: 14px !important;
+  font-size: 13px !important;
 }
 .chunk1 {
   position: relative;
@@ -371,7 +376,7 @@ html {
   margin-top: 1rem;
   min-height: 9.12rem;
   font-family: PingFang-SC-Regular;
-  font-size: 1.44rem;
+  font-size: 1.2rem;
   font-weight: normal;
   font-stretch: normal;
   line-height: 2.28rem;
